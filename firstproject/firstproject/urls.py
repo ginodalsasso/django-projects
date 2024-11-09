@@ -20,6 +20,6 @@ from passgen import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
-    path('password/', views.password),
+    path('', views.home, name='home'),
+    path('password/', views.password, name='password'),
 ]
